@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Rubik, sans-serif;
+  font-size: 10px;
+}
+
+.profil_img {
+  border: white solid 3px;
+  border-radius: 50px;
+}
+
+.profil_img_page {
+  transform: translate(-50%, 0);
+  top: 15%;
+}
+
+#clear {
+  background-color: #3e3e3e;
+  color: #edf0f3;
+  border-radius: 50px;
+  margin: -15px -26px -15px 10px;
+  padding: 15px 15px;
+  animation: insert_left 0.7s ease-in-out;
+}
+
+@keyframes insert_left {
+  0% {
+    transform: translate(100%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.movie {
+  background-color: #edf0f3;
+  color: #3e3e3e;
+  border-radius: 50px;
+  padding: 15px 15px;
+}
+.movie img {
+  border-radius: 40px 40px 0px 0px;
+  max-width: 111%;
+  height: auto;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.bottom-movie h3 {
+  font-size: 2em;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+.red {
+  color: red;
+}
+
+.tag {
+  padding: 0 7px;
+  font-size: 1.4em;
+  color: #3e3e3e;
+  cursor: pointer;
+  position: relative;
+}
+
+.tag:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #3e3e3e;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.tag:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.highlight:after {
+  display: none;
+}
+
+#sorts img {
+  transform: rotate(0deg);
+  transition: 0.4s all ease-in-out;
+}
+#sorts .rotate {
+  transform: rotate(540deg);
+  transition: 0.4s all ease-in-out;
+}
+#sorts .active {
+  text-decoration: underline;
+}
+#sorts h1 {
+  cursor: pointer;
+}
+
+.albumCase {
+  border: 2px white solid;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+  transition: 0.3s ease-in-out all;
+  color: white;
+  text-align: center;
+}
+.albumCase:hover {
+  border-width: 3.5px;
+  font-size: 2rem;
+}
+.albumCase #AjoutAlbum {
+  font-size: 3.75rem;
+  transition: 0.3s ease-in-out;
+}
+.albumCase #AjoutAlbum:hover {
+  font-size: 6rem;
+}
+
+.button {
+  background-color: rgb(37, 99, 235);
+  color: white;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out all;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+.button:hover {
+  background-color: rgb(29, 78, 216);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+
+.bottom-movie a {
+  font-size: 1.2rem;
+  padding: 5px 5px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style_pre_tailwind.scss.map */
